@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海賊王1084討論區</title>
+
+    <!-- #是id，.是class -->
+    <style> 
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        body {
+            background-image: url("/image/onepieceBG1.png");
+            background-size: cover;
+            color: white;
+        }
+        #web {
+            display: flex;
+            justify-content: center;
+        }
+        #web2 {
+            align-items: flex-start;
+            border: 5px solid green;
+            width: 700px;
+            background-color: rgb(0, 0, 0);
+        }
+        .top1{
+            background-color: blue;
+            font-size: 50px;
+            text-align: center;
+        }
+        #img1 {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        p {
+            margin: 35px 0;
+            background-color: rgb(95, 255, 170);
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+        }
+        .ad1 {
+            background-color: rgb(203, 255, 150);
+        }
+        #web-sup{
+            text-align: center;
+        }
+        .sup1 {
+            width: 200px;
+            height: 40px;
+        }
+        .sup2 {
+            width: 80px;
+            height: 40px;
+        }
+        .sup3 {
+            width: 100%;
+        }
+        .sup4 {
+            width: 50%;
+            height: 40px;
+        }
+        .sup5 {
+            border: 5px solid rgb(0, 0, 0);
+        }
+        .sup6 {
+            border: 5px solid rgb(255, 0, 0);
+        }
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 class="top1"> asdds</h1>
+    <button>留言</button> -->
+
+    <div id="web">
+        <div id="web2">
+            <div id="web-top">
+                <div class="sup3">
+                    <button class="sup4 sup5" style="float:left;" id="subscribe">登入</button>
+                    <button class="sup4 sup6" style="float:right;" id="backToTop">注冊</button>
+                </div>
+                <h1 class="top1">海賊王1084討論區</h1>
+                <img src="/image/onepiece1084.png" id="img1">
+            </div>
+            <div id="web-mid"><br/>
+                <h1 class="mid1" style="text-align: right;"><span id="commentCount">2</span>條留言</h1>
+            </div><br/>
+            <div class="web-ad">
+                <p>Kenny: 大家看了嗎</p>
+                <p>Kenny: 很精彩</p>
+            </div>
+            <div id="web-sup"><br/>
+                <input class="sup1" type="text" name="輸入留言" id="comment">
+                <button class="sup2">留言</button>
+            
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-wrapper hide">
+        <div class="popup">
+            <div class="popup-close"></div>
+
+            <div class="popup-content">
+                <!-- <h2>登錄賬號</h2>
+                <h2>賬號：</h2>
+                <h2>密碼：</h2> -->
+                <input type="text" class="popup-pw" placeholder="請輸入你的賬號">
+
+                <!-- <input type="text" class="popup-as" placeholder="請輸入你的密碼"> -->
+                <button>登錄</button>
+                <!-- <button class="">取消</button> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="comment.js"></script>
+</body>
+</html>
